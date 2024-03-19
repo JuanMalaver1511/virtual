@@ -595,12 +595,13 @@ body{
     color: #fff; 
     }
 
-    .hero__cta_new{
-        margin-left: 140px;
-    }
-    .hero__cta__new{
-        margin-left: 100px;
-    }
+.hero__cta_new {
+    margin: 0 auto; /* Centra horizontalmente el botón */
+}
+
+.hero__cta__new {
+    margin: 0 auto; /* Centra horizontalmente el botón */
+}
     .about__paragraph {
         text-align: justify;
         padding-left: 20px; /* Espacio a la izquierda */
