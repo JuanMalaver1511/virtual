@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@100&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #2141e68e 0%, #4814d67e 100% );
+    --color-primary: #c14dd6;
+    --color-secondary: #ae78e1;
+    --boton-padding: 20px 40px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+   width: 100%;
+   margin: 0 auto; 
+   overflow: hidden;
+   padding: 80px 0;
+   max-width: 1200px;
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.hero{
+    height: 100vh;
+    background-image: var(--background), url('../Img/Banner-ganadores-Virtual-challenge-Campus-Virtual2_Banner\ Santoto\ Tunja.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+
+.hero .container{
+    padding: 0;
+}
+.nav img {
+    margin-left: 20px; /* Ajusta el margen izquierdo de la imagen */
+    margin-right: auto; /* Mueve la imagen hacia la esquina izquierda */
+}
+
+.nav__menu-icon {
+    display: none; /* Oculta el icono por defecto */
+}
+.nav__items {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav {
+    background: #29256a;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    align-items: center;
+    height: 70px;
+    padding: 0 40px; /* Añade relleno a los extremos */
+    box-sizing: border-box; /* Asegura que el relleno no afecte al ancho total */
+    font-weight: 700px;
+}
+
+.nav--footer {
+    font-weight: 300;
+}
+
+.nav__items {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Ajusta el relleno para controlar el espacio entre elementos */
+    margin-left: 10px; /* Ajusta el margen izquierdo para controlar el espacio entre elementos */
+    font-weight: inherit;
+}
+
+.nav__items--cta {
+    border: 1px solid #fff;
+}
+
+.nav__items--cta:hover {
+    background: white;
+    color: black;
+}
+
+.nav__items:hover {
+    background: white;
+    color: black;
+}
+
+.nav__items--footer {
+    padding: 10px;
+}
+
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #ffff;
+}
+
+.hero__texts{
+    width: 80%;
+    margin-bottom: 40px;
+}
+.hero__title{
+    font-size: 4.2rem;
+}
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+
+}
+
+.hero__cta{
+    display: inline-block;
+    background: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 25px;
+}
+.hero__cta:hover{
+    color: #fff;
+    background: var(--color-secondary);
+}
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/* About */
+
+.presentation{
+    padding-top:0;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentation__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+
+.presentation__cta:hover{
+    background: #2141e68e;
+}
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img{
+    text-align: center;
+}
+
+.about__img--left{
+    text-align: left;
+}
+
+.about__picture{
+    max-width: 80%;
+}
+
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1-5;
+    font-weight: 300;
+    margin: 3 auto;
+}
+
+.hero__cta_new{
+    display: inline-block;
+    background: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration:none;
+    border-radius: 20px; 
+    border: 1px solid rgb(223, 173, 232);
+}
+.hero__cta__new{
+    display: inline-block;
+    background: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration:none;
+    border-radius: 20px; 
+    border: 1px solid rgb(223, 173, 232);
+}
+
+.hero__cta_new:hover{
+    background: #ae78e1;
+    color: #fff;
+}
+.hero__cta__new:hover{
+    background: #ae78e1;
+    color: #fff;
+}
+
+/* section premios*/
+.projects{
+    text-align: center;
+}
+.boton-imagen {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+    flex-direction: column; /* Cambio de la dirección del flexbox a columna */
+    align-items: center;
+    text-align: center; /* Alineación del texto */
+  }
+  
+  .boton-imagen img {
+    width: 20em; /* Ajusta el ancho de la imagen según sea necesario */
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+  }
+
+  /*Estrategias*/
+  .carousel-container {
+    position: relative;
+    z-index: -1;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.9s ease; 
+}
+
+.card {
+    text-align: justify;
+    width: 460px;
+    height: 300px;
+    margin-right: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.card:hover {
+    background: #ae78e1;
+    color: #ffff;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.28);
+    color: #DC1A70;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2; /* Asegurar que los botones de navegación estén por encima del contenido del carrusel */
+}
+.carousel-control-next:hover{
+    background: #ae78e1;
+    color: white;
+}
+.carousel-control-prev:hover{
+    background: #ae78e1;
+    color: white;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Testimonio */
+
+.entrega{
+    margin-top: -20px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.entrega img{
+    border-radius: 25px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 20px;
+    background: #1230c2b4;
+    width: 100%;
+    height: 400px;
+    padding: 20px 20px; /* Añadido un espacio de relleno interno para separar el contenido del borde */
+    box-sizing: border-box; /* Asegurar que el padding no aumente el tamaño total del footer */
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Solo una columna en dispositivos pequeños */
+    gap: 20px;
+    align-items: center;
+    text-align: center; /* Centrar el texto en todas las columnas */
+}
+
+.footer__title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.5rem; /* Reducir ligeramente el tamaño del título */
+    margin-bottom: 20px; /* Reducir el espacio inferior del título */
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center; /* Centrar los íconos horizontalmente */
+}
+
+.footer__container-icons {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 50px; /* Centrar verticalmente el ícono */
+    margin: 0 10px; /* Añadir un pequeño margen entre los íconos */
+}
+
+.footer__icon {
+    font-size: 20px; /* Reducir el tamaño de los íconos */
+    text-decoration: none;
+    color: inherit; /* Heredar el color del texto del padre */
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 800px){
+    :root{
+        --boton-padding: 18px 40px
+    }
+
+    .nav{
+        justify-content: space-around;
+    }
+
+    .nav__items--cta{
+        border:none
+    }
+
+    .nav__items{
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
+        margin-right: 0;
+    }
+    
+    .nav__items--footer{
+        border:none
+    }
+
+    .hero__texts{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle{
+        font-size: 1.5rem;
+    }
+
+    .presentation__copy{
+        width: 100%;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .about.container{
+        padding-top: 30px;
+    }
+
+    .about__img--left{
+        text-align: center;
+    }
+
+    .about__texts:last-child{
+        grid-row: 3/4;
+    }
+
+    /* projects */
+
+    .testimony__grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__contact{
+        grid-row: 1/2;
+    }
+
+    /* Estrategias */
+    .card {
+        width: 90%;
+        max-width: 500px;
+        margin-right: 50px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        --boton-padding: 18px 35px;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+        margin-bottom: 5px;
+        text-align: center;
+        padding-left: 20px; /* Espacio a la izquierda */
+        padding-right: 20px;
+    }
+
+    .footer {
+        position: relative; 
+    }
+    
+    .logoVirtual {
+        position: absolute; 
+        top: 15px; 
+        left: 50%; /* Centra la imagen horizontalmente */
+        transform: translateX(-50%); /* Corrige la posición horizontal */
+    }
+
+    .nav__items{
+        padding: 0 10px;
+        border: 0;
+    }
+
+    .hero__texts{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .hero__title{
+        font-size: 3rem;
+    }
+
+    .presentation__picture{
+        width: 120px;
+        height: 120px;
+    }
+
+    .about{
+        row-gap: 60px;
+    }
+
+    .about.container{
+        padding-top: 10px;
+    }
+
+
+    .testimony__item{
+        padding: 30px 15px;
+    }
+
+    .testimony__person{
+        flex-direction: column;
+    }
+
+    .testimony__texts{
+        text-align: center;
+    }
+
+    .testimony_img{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Estrategias */
+    .card {
+        width: 90%;
+        max-width: 500px;
+        margin-right: 50px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
+    .nav__menu-icon {
+        display: flex; /* Muestra el icono del menú en dispositivos móviles */
+    }
+
+    .nav__items-container {
+        display: none; /* Oculta los elementos del menú por defecto en dispositivos móviles */
+        flex-direction: column;
+        background-color: #443DA8;
+        position: absolute;
+        top: 60px; /* Ajusta la posición según sea necesario */
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav__items {
+        padding: 10px 20px;
+    }
+
+    .nav__items:not(:first-child) {
+        border-top: 1px solid #fff; /* Añade bordes entre los elementos del menú */
+    }
+    
+    .nav__items-container.active {
+    display: flex;
+    }
+    .nav__menu-icon {
+    display: block; /* Muestra el icono solo en la versión móvil */
+    width: 24px;
+    height: 24px;
+    }
+
+    .nav__icon-svg {
+    width: 100%;
+    height: 100%;
+    color: #fff; 
+    }
+
+    .hero__cta_new{
+        margin-left: 140px;
+    }
+    .hero__cta__new{
+        margin-left: 100px;
+    }
+    .about__paragraph {
+        text-align: justify;
+        padding-left: 20px; /* Espacio a la izquierda */
+        padding-right: 20px; /* Espacio a la derecha */
+    }
+
+    .premios{
+        margin-top: 0px;
+    }
+
+}
+
+
+
+
